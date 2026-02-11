@@ -9,7 +9,7 @@
     extreme: { name: "極難版", hand: 20, empty: 20,       emptyMode: "fixed" },
 
     expert:  { name: "專家版", hand: 20, empty: Infinity, emptyMode: "all"   },
-    region:  { name: "地域版", hand: 20, empty: Infinity, emptyMode: "all"   },
+    region:  { name: "地獄版", hand: 20, empty: Infinity, emptyMode: "all"   },
   };
 
   // === 模式 → CPU 反應難度（只影響 CPU 的 delay/命中率等） ===
