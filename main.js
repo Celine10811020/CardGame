@@ -16,9 +16,9 @@
   // 你之後要怎麼配都可以，先給一個合理預設
   const MODE_TO_CPU_LEVEL = {
     newbie:  "easy",
-    intro:   "easy",
+    intro:   "normal",
     normal:  "easy",
-    hard:    "easy",
+    hard:    "normal",
     extreme: "easy",
     expert:  "normal",
     region:  "hard",
