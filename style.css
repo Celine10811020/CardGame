@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background: #f4f1e8;
+  font-family: "Noto Serif TC", serif;
+  user-select: none;
+}
+
+#controlBar{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px 20px;
+  border-bottom:2px solid #333;
+  background:#fdfbf4;
+  font-size:16px;
+}
+
+#statusText{
+  margin-left:auto;
+  font-size:14px;
+  opacity:0.85;
+}
+
+#game {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === 記憶畫面 === */
+#memoryScreen {
+  position: absolute;
+  inset: 0;
+  color: Black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  z-index: 10;
+}
+
+#memoryTimerBar {
+  width: 80%;
+  height: 8px;
+  background: white;
+  margin-top: 20px;
+  position: relative;
+}
+
+#memoryTimerFill {
+  height: 100%;
+  width: 100%;
+  background: gold;
+}
+
+/* === 上句區 === */
+#upperArea {
+  height: 150px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+/* 回合倒數線 */
+.timerLine {
+  position: absolute;
+  height: 4px;
+  background: crimson;
+  width: 100%;
+  transition: width 5s linear;
+}
+
+#topTimer {
+  top: 0;
+}
+
+#bottomTimer {
+  bottom: 0;
+}
+
+/* === 棋盤區 === */
+.board {
+  display: grid;
+  gap: 8px;
+  padding: 10px 40px;
+  flex: 1;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.1s;
+  overflow: hidden;          /* 不要溢出 */
+  word-break: break-word;    /* 中文也能斷行 */
+  line-height: 1.3;
+}
+
+.card:hover {
+  background: #ffe;
+}
+
+.aiCard {
+  transform: rotate(180deg);
+  background: #f8f8f8;
+}
+
+/* 電腦游標 */
+#aiCursor {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  pointer-events: none;
+  background: red;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 0.4s ease;
+}

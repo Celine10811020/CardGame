@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>詩篇競技牌 Prototype</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="controlBar">
+  <label>難度：
+    <select id="difficultySelect"></select>
+  </label>
+
+  <button id="restartBtn">重新開始</button>
+
+  <div id="statusText"></div>
+</div>
+
+
+<div id="game">
+
+  <!-- 電腦牌 -->
+  <div id="aiBoard" class="board"></div>
+
+  <!-- 上句區 -->
+  <div id="upperArea">
+    <div id="topTimer" class="timerLine"></div>
+    <div id="upperText"> </div>
+    <div id="bottomTimer" class="timerLine"></div>
+  </div>
+
+  <!-- 玩家牌 -->
+  <div id="playerBoard" class="board"></div>
+
+  <!-- 記憶畫面 -->
+  <div id="memoryScreen">
+    <div id="memoryText">記憶時間 10:00</div>
+    <button onclick="Game.startGame()">直接開始</button>
+    <div id="memoryTimerBar">
+      <div id="memoryTimerFill"></div>
+    </div>
+  </div>
+
+  <div id="aiCursor"></div>
+
+</div>
+
+<script src="database.js"></script>
+<script src="cpu.js"></script>
+<script src="game.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
