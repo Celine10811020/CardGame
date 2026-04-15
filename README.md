@@ -24,10 +24,6 @@ Instead of using classical Japanese poems, the content is redesigned around Psal
 - Memorization card position before starting
 - Static browser-based deployment with GitHub Pages
 
-## Live Site
-
-[View Website](https://celine10811020.github.io/CardGame/)
-
 ## Difficulty Modes
 
 The game includes multiple preset difficulty levels:
